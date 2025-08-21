@@ -8,7 +8,7 @@ module.exports = {
       type: 'foreign key',
       name: 'category_event_association',
       references: {
-        table: 'categories',
+        table: 'Categories',
         field: 'id'
       }
     })
