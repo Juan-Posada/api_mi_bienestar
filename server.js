@@ -7,7 +7,8 @@ app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json())
 app.use(morgan('dev'))
 
-if(process.env.NODE_ENV !== 'production'){
+if (process.env.NODE_ENV !== 'production') {
+    // Cargamos las variables de entorno
     require('dotenv').config()
 }
 
