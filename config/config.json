@@ -7,11 +7,17 @@
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "posada",
+    "password": "APwJvedzRJtaeEoH1ITHoOYvPNYW78Mf",
+    "database": "bd_api_mi_bienestar",
+    "host": "dpg-d2jhuder433s73eb3neg-a",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl":{
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   },
   "production": {
     "username": "root",
