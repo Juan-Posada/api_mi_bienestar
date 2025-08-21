@@ -5,7 +5,7 @@ const db = require('../models')
 // GET ALL
 const getAllCategories = async () => {
     try {
-        let categories = await db.categories.findAll({
+        let categories = await db.Category.findAll({
             attributes: {
                 exclude: ['createdAt', 'updatedAt']
             }
