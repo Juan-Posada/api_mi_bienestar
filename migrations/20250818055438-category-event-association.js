@@ -15,6 +15,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    queryInterface.removeConstraint('events'), 'category_event_association'
+    queryInterface.removeConstraint('events', 'category_event_association')
   }
 };
