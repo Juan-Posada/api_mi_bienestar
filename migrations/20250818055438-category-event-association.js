@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    await queryInterface.addConstraint('events', {
+    await queryInterface.addConstraint('Events', {
       fields: ['categoryId'],
       type: 'foreign key',
       name: 'category_event_association',
@@ -15,6 +15,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    queryInterface.removeConstraint('events', 'category_event_association')
+    queryInterface.removeConstraint('Events', 'category_event_association')
   }
 };
